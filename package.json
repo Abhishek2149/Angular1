@@ -2,7 +2,7 @@
   "name": "angular-concepts",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "npx ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
