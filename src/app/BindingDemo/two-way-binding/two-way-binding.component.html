@@ -1,0 +1,10 @@
+<p>two-way-binding works!</p>
+<input type="text"  [(ngModel)]="uname" />
+<br>
+{{uname}}
+<br>
+<input type="text" value="Enter some text" (click)="OnInputClick($event)"/>
+<!-- $event will send event to method as parameter  -->
+
+<!-- Please add formsmodule in app.modules.ts for two ways data binding And add into imports -->
+

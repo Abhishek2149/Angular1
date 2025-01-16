@@ -1,0 +1,37 @@
+
+<button (click)="AddtoCart2()">Add to Cart</button>
+{{msg}}
+<br>
+
+<input type="text" value="Enter some text" (change)="onChangeEvent($event)">
+{{textMessage}}
+<br>
+
+<button value="Laptop" (click)="AddtoCart($event)" class="btn btn-success">Laptop</button>
+<button value="Mobile" (click)="AddtoCart($event)" class="btn btn-success">Mobile</button>
+<button value="Desktop" (click)="AddtoCart()" class="btn btn-success">Destop</button>
+
+<!-- <h1 style="color:blue;">Template Reference Variable</h1> -->
+<h1 class="display-2">Template Reference Variable</h1>
+<p>Template variable help you use data from one part of a template in another part of the template.With template variable, you can perfrom task such as respond to user input
+or finally tune your application forms
+A template variable can refer to the following:
+a DOM element with a template
+a driective
+Template ref a  web component
+</p>
+<input type="text" #Inputinfo value="myinputtext" name="txt">
+<button (click) = "getInputInfo(Inputinfo)">Get Info</button>
+{{info}}
+<br>
+
+Enter you Name <input type="text" #uname placeholder="Enter user name" name="txt">
+<button (click) = "GreetingForTheDay(uname)">Say Hi</button>
+{{UserName}}
+<br>
+
+
+Enter product name which you want to order <input type="text" #productname placeholder="Enter product name">
+<button (click) = "orderforsomething(productname)">order now</button>
+{{anyname}}
+<input type="text" value="Enter Some Text" [(ngModel)]="anyname" />

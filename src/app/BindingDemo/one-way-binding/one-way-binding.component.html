@@ -1,6 +1,6 @@
-<p>one-way-binding works!</p>
+<p class="display-6">one-way-binding works!</p>
 <h1>{{25*25}}</h1>
-<h1 class="display-4">{{message}}</h1>
+<h1 class="display-4" style="color: blue;">{{message}}</h1>
 
 <h3>My app status is {{appStatus ?  statusTrue : statusFalse}}</h3>
 
@@ -12,3 +12,44 @@
 </div>
 
   
+<h2>2. Proberty Binding [property] = data</h2>
+<input type="text" id="text-name" [value]="username">
+<br/>
+<input type="text" id="text-name" bind-value="username">
+<br/>
+<input type="text" id="text1" [disabled]="enable"  bind-value="username">
+<br/>
+<input type="text" id="text1" [disabled]="!enable"  bind-value="username">
+
+<h2>3. Class Binding and Style Binding</h2>
+<p>Note: for applying mutiple class and style we have to use ngClass and ngStyle</p>
+
+<div class="box" [ngClass] = "multipleClasses">
+  class with ngClass
+</div>
+<div class="box" [class] = "'class1 class2 class3'">
+  class with class like property
+</div>
+
+<div class="box class1 class2 class3">
+  class with single class
+</div>
+
+<div [ngStyle] = "myStyle">
+  style applied using ngStyle from ts file
+</div>
+
+<h3>Status update please !! </h3>
+<button (click)="onAddCart()" >Add to cart</button>
+<button (click)="onRemoveCart()" >Remove from cart</button>
+
+<br/>
+{{msg}}
+<br>
+<p>Event binding</p>
+<input type="text" (change)="onChange()">
+{{onchangetxt}}
+<br>
+
+<input type="text" (blur)="onBlur()" value="this will change when out of focus" >
+<br/>
