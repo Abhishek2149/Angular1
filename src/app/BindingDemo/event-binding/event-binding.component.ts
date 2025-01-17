@@ -20,6 +20,7 @@ export class EventBindingComponent {
 
   AddtoCart2() {
     this.msg = "Product Added in cart";
+  
 
   }
   AddtoCart(event?: MouseEvent) {

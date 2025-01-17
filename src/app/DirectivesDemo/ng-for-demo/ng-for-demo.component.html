@@ -1,0 +1,69 @@
+<!-- syntax
+*ngFor = "let varname of propertyname / collection;index as variable" -->
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sr.No</th>
+        <th>ID</th>
+        <th>ProductImage</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+        <th></th>
+      </tr>
+    </thead>
+    <!-- <tbody>
+      <tr *ngFor="let prod of products; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ prod.id }}</td>
+        <td>{{ prod.prodImg }}</td>
+        <td>{{ prod.prodName }}</td>
+        <td>{{ prod.prodPrice }}</td>
+        <td><button class="btn btn-sm btn-success">Add Item</button></td>
+      </tr>
+    </tbody> -->
+
+    <!-- <tbody>
+        <tr *ngFor="let prod of products; first as i">
+          <td>*{{i}}</td>
+          <td>{{ prod.id }}</td>
+          <td>{{ prod.prodImg }}</td>
+          <td>{{ prod.prodName }}</td>
+          <td>{{ prod.prodPrice }}</td>
+          <td><button class="btn btn-sm btn-success">Add Item</button></td>
+        </tr>
+      </tbody> -->
+
+      <!-- <tbody>
+        <tr *ngFor="let prod of products; last as i">
+          <td>#{{ i  }}</td>
+          <td>{{ prod.id }}</td>
+          <td>{{ prod.prodImg }}</td>
+          <td>{{ prod.prodName }}</td>
+          <td>{{ prod.prodPrice }}</td>
+          <td><button class="btn btn-sm btn-success">Add Item</button></td>
+        </tr>
+      </tbody> -->
+
+      <!-- <tbody>
+        <tr *ngFor="let prod of products; even as i">
+          <td>#{{ i}}</td>
+          <td>{{ prod.id }}</td>
+          <td>{{ prod.prodImg }}</td>
+          <td>{{ prod.prodName }}</td>
+          <td>{{ prod.prodPrice }}</td>
+          <td><button class="btn btn-sm btn-success">Add Item</button></td>
+        </tr>
+      </tbody> -->
+      <tbody>
+        <tr *ngFor="let prod of products; odd as i">
+          <td>#{{ i}}</td>
+          <td>{{ prod.id }}</td>
+          <td>{{ prod.prodImg }}</td>
+          <td>{{ prod.prodName }}</td>
+          <td>{{ prod.prodPrice }}</td>
+          <td><button class="btn btn-sm btn-success">Add Item</button></td>
+        </tr>
+      </tbody>
+  </table>
+</div>

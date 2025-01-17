@@ -14,9 +14,19 @@ import { TwoWayBindingComponent } from './BindingDemo/two-way-binding/two-way-bi
 import { EventBindingComponent } from './BindingDemo/event-binding/event-binding.component';
 
 
+import { NgIfDemoComponent } from './DirectivesDemo/ng-if-demo/ng-if-demo.component';
+import { NgForDemoComponent } from './DirectivesDemo/ng-for-demo/ng-for-demo.component';
+import { NgSwitchDemoComponent } from './DirectivesDemo/ng-switch-demo/ng-switch-demo.component';
+
+import { UseCustomDirectiveComponent } from './DirectivesDemo/use-custom-directive/use-custom-directive.component';
+
+import { ProductListComponent } from './InputAndOutputDecorator/InputDecoratorDemo/product-list/product-list.component';
+
+import { ParentComponent } from './InputAndOutputDecorator/OutputDecoratorDemo/parent/parent.component';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,CallbackWebsiteComponent,OneWayBindingComponent,CommonModule,TwoWayBindingComponent,FormsModule,EventBindingComponent],
+  imports: [RouterOutlet,ParentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

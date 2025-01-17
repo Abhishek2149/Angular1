@@ -1,0 +1,16 @@
+<button class="btn btn-primary" (click)="onCreateBlock()">{{buttonCaption}}</button>
+
+<div *ngIf="isValid; then trueBlock else falseBlock"></div>
+
+<ng-template #trueBlock>
+  <div class="alert alert-success">
+    <strong>Success!</strong> Indicates a successful or positive action.
+  </div>
+</ng-template>
+
+<ng-template #falseBlock>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or
+    potentially negative action.
+  </div>
+</ng-template>

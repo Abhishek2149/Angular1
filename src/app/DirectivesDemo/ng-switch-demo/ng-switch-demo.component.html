@@ -1,0 +1,40 @@
+<input type="text" value="" [(ngModel)]="switch_expression">
+{{switch_expression}}
+<br>
+<h3>Using Number</h3>
+<div [ngSwitch]="switch_expression">
+    <div *ngSwitchCase="'1'">
+        <p>First Case</p>
+    </div>
+    <div *ngSwitchCase="'2'">
+        <p>Second Case</p>
+    </div>
+    <div *ngSwitchCase="'3'">
+        <p>Third Case</p>
+    </div>
+    <div *ngSwitchCase="'4'">
+        <p>Forth Case</p>
+    </div>
+    <div *ngSwitchDefault>
+        <p>Please enter a valid vale</p>
+    </div>
+</div>
+<br>
+<h3>Using String</h3>
+<div [ngSwitch]="switch_expression">
+    <div *ngSwitchCase="'one'">
+        <p>First Case</p>
+    </div>
+    <div *ngSwitchCase="'two'">
+        <p>Second Case</p>
+    </div>
+    <div *ngSwitchCase="'three'">
+        <p>Third Case</p>
+    </div>
+    <div *ngSwitchCase="'four'">
+        <p>Forth Case</p>
+    </div>
+    <div *ngSwitchDefault>
+        <p>Please enter a valid vale</p>
+    </div>
+</div>
