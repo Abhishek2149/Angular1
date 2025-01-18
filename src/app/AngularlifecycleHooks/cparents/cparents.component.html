@@ -1,0 +1,28 @@
+<p>
+  To open the developer console in Internet Explorer, click on the Gear Menu in
+  the upper-right-hand corner of the browser window and select
+  <strong> F12 Developer Tools</strong>. You can also press F12 to open it. The
+  console will either open up within your existing Internet Explorer window, or
+  in a new window.
+</p>
+<p>
+  <strong> Hooking into the component lifecycle - Angular press F12</strong>
+</p>
+<div class="jumbotron text-center">
+  <h2>Subscribe Details</h2>
+  <input type="text" placeholder="Input subscribe name" #User />
+  <button class="btn btn-primary" (click)="submitValue(User)">
+    Submit Name
+  </button>
+  <app-cchild *ngIf="ChildExist" [UserName]="UserName"
+    >ngContent : {{ UserName }}</app-cchild
+  >
+  <br />
+  <br />
+  <button (click)="destory()" class="btn btn-danger">Destory Component</button>
+</div>
+<img
+  src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Urus/10635/1724844423793/front-left-side-47.jpg"
+  class="card img"
+  alt="Banner Image"
+/>

@@ -1,0 +1,35 @@
+<table class="table">
+  <thead class="thead-atr">
+    <tr>
+      <th>sr.no</th>
+      <th>UserID</th>
+      <th>Name</th>
+      <th>UserName</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of UserList; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.website }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Single User</h1>
+<p>{{ User.id }}</p>
+<p>{{ User.name }}</p>
+<p>{{ User.username }}</p>
+<p>{{ User.phone }}</p>
+<p>{{ User.website }}</p>
+
+<button class="btn btn-success" (click)="ShowMessage()"> Know More </button>
+
+

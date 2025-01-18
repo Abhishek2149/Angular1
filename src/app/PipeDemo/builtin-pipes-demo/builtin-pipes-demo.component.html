@@ -1,0 +1,50 @@
+<h3 class="display-3">Angular Built In Pipes</h3>
+
+<fieldset class="bg-info text-dark">
+    <legend class="text-bg-dark">Async Pipe</legend>
+   <code>Current Time</code>: {{ time | async }}  
+</fieldset>
+
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Date Pipe</legend>
+  <p>Full Date : {{ date | date : "fullDate" }}</p>
+  <p>Short Date : {{ date | date : "shortDate" }}</p>
+  <p>Medium Date : {{ date | date : "medium" }}</p>
+  <p>Format Date : {{ date | date : "dd/mm/yy" }}</p>
+  <p>Format mm:ss : {{ date | date : "mm:ss" }}</p>
+  <p>Date : {{ date | date : "MMM dd, yyyy 'at' hh:mm a" }}</p>
+</fieldset>
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Currensy Pipes</legend>
+  <p>Balance : {{ balance | currency : "USD" : "symbol" : "1.2-2" }}</p>
+  <p>Balance : {{ balance | currency : "USD" }}</p>
+  <p>Balance : {{ balance | currency : "INR" }}</p>
+  <p>Balance : {{ balance | currency : "INR" : "symbol" }}</p>
+</fieldset>
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Decimal Pipes</legend>
+  <p>Balance : {{ balance | number : "1.1-4" }}</p>
+  <p>Balance : {{ balance | number : "1.1-2" }}</p>
+  <p>Balance : {{ balance | number : "1.1-3" }}</p>
+  <p>Balance : {{ balance | number : "1.1-5" }}</p>
+</fieldset>
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Percentage Pipes</legend>
+  <p>Progeess : {{ progress | percent : "1.0-2" }}</p>
+</fieldset>
+
+
+<fieldset class="bg-info text-dark">
+    <legend class="text-bg-dark">Upper and Lower Case Pipes</legend>
+    <p>UPPERCASE : {{ message | uppercase }}</p>
+    <p>lowercase : {{ message | lowercase }}</p>
+</fieldset>
+
+<fieldset class="bg-info text-dark">
+    <legend class="text-bg-dark">JSON Pipes</legend>
+    <p>JSON : {{ object | json }}</p>
+</fieldset>

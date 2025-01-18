@@ -1,0 +1,31 @@
+<h3 class="display-3">Angular Custom Pipes </h3>
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Use Custom Pipe To Reverse String</legend>
+  {{ nameStr | reverseString }}
+</fieldset>
+
+<fieldset class="bg-info text-dark">
+  <legend class="text-bg-dark">Use Custom Pipe To Reverse String List</legend>
+  
+  <table class="table">
+    <thead class="thead-atr">
+        <tr>
+            <th>sr.no</th>
+            <th>Name</th>
+            <th>Reversed Name</th>
+            <th>UPPERCASE</th>
+            <th>lowercase</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let name of nameList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{name}}</td>
+            <td>{{name | reverseString }}</td>
+            <td>{{name | uppercase }}</td>
+            <td>{{name | lowercase }}</td>
+        </tr>
+    </tbody>
+  </table>
+</fieldset>

@@ -24,9 +24,18 @@ import { ProductListComponent } from './InputAndOutputDecorator/InputDecoratorDe
 
 import { ParentComponent } from './InputAndOutputDecorator/OutputDecoratorDemo/parent/parent.component';
 
+
+import { BuiltinPipesDemoComponent } from './PipeDemo/builtin-pipes-demo/builtin-pipes-demo.component';
+import { CuatomPipeDemoComponent } from './PipeDemo/cuatom-pipe-demo/cuatom-pipe-demo.component';
+
+
+import { CparentsComponent } from './AngularlifecycleHooks/cparents/cparents.component';
+
+import { UtilityConsumeServiceComponent } from './ServiceDemo/utility-consume-service/utility-consume-service.component';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ParentComponent],
+  imports: [RouterOutlet,UtilityConsumeServiceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
