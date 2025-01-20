@@ -5,6 +5,7 @@
     "npx ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "json-server": "json-server --watch db.json --port 3003",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

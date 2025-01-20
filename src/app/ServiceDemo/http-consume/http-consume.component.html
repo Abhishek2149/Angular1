@@ -1,0 +1,19 @@
+
+<div class="container-fluid bg-secondary">
+  <div class="row d-flex">
+    <div
+      class="col-lg-4 col-md-6 col-12 mb-4"
+      *ngFor="let User of UserList; index as i"
+    >
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h4 class="card-title">{{ i + 1 }} User details</h4>
+          <p class="card-text">{{ User.name }}</p>
+          <p class="card-text">{{ User.username }}</p>
+          <p class="card-text">{{ User.email }}</p>
+          <a href="#" class="btn btn-sm btn-primary">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

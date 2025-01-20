@@ -33,9 +33,12 @@ import { CparentsComponent } from './AngularlifecycleHooks/cparents/cparents.com
 
 import { UtilityConsumeServiceComponent } from './ServiceDemo/utility-consume-service/utility-consume-service.component';
 
+
+import { HttpConsumeComponent } from './ServiceDemo/http-consume/http-consume.component';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,UtilityConsumeServiceComponent],
+  imports: [RouterOutlet,HttpConsumeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
