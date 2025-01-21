@@ -1,0 +1,71 @@
+<div class="container d-flex col-md-6 mt-5 alert alert-secondary justify-content-center mt-3">
+    <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit(myReactiveForm.value)">
+        <div [hidden]="!submited">
+            <div class="alert alert-success">
+                <strong>Form Submited Successfully!!</strong>
+            </div>
+        </div>
+        <fieldset class="text-dark">
+            <legend>User Registation Form</legend>
+            <div class="mb-3 mt-3">
+                <label for="name">name:</label>
+                <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter name"
+                    name="name" required />
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('name')?.touched">
+                    <strong>please enter valid name</strong>
+                </span>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="email">email:</label>
+                <input formControlName="email" type="text" class="form-control" id="email" placeholder="Enter Email"
+                    name="username" required />
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('email')?.touched">
+                    <strong>please enter valid email</strong>
+                </span>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="mobile">mobile:</label>
+                <input formControlName="mobile" type="text" class="form-control" id="mobile" placeholder="Enter mobile"
+                    name="mobile" required />
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('mobile')?.touched">
+                    <strong>please enter valid mobile</strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <div class="mb-3 mt-3">
+                    <label for="course">Select course:</label>
+                    <select name="course" id="course" class="form-control" formControlName="course">
+                        <option value="html">HTML</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="radio" *ngFor="let gender of genders">
+                    <label for="{{ gender.id }}">
+                        <input type="radio" id="{{ gender.id }}" formControlName="gender" value="{{ gender.name }}" />
+                        {{ gender.name }}
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group" formArrayName="skills">
+                <label>Skills</label>
+                <ng-container *ngFor="let skill of myReactiveForm.get('skills')['controls']; index as i">
+                    <input type="text" class="form-control mt-2" autocomplete="off" formControlName="{{i}}" placeholder="Add Skill">
+                </ng-container>
+            </div>
+            <button (click)="OnAddSkills()" class="btn btn-success btn-sm mt-2 mb-3"><i>+</i>Add Skill</button>
+            <button (click)="OnRemoveSkills()" class="btn btn-danger btn-sm mt-2 mb-3 sm-2"><i>-</i>RemoveSkill</button>
+            <br>
+
+            <button type="submit" class="btn btn-primary" [disabled]="!myReactiveForm.valid">Submit</button>
+        </fieldset>
+    </form>
+</div>

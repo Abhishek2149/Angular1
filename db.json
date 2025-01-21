@@ -222,6 +222,63 @@
       "email": "ganesh@google.com",
       "phone": "9797765665",
       "website": "www.ganesh89.org"
+    },
+    {
+      "id": "9b2d",
+      "name": "Abhishek Suresh Jaybhaye",
+      "username": "Admin45",
+      "email": "abhi.jaybhaye2000@gmail.com",
+      "phone": "07620428310",
+      "website": "www.google.com"
+    },
+    {
+      "id": "a73f",
+      "name": "Akash",
+      "username": "admin",
+      "email": "abhi.jaybhaye@gmail.com",
+      "phone": "07620428310",
+      "website": "www.google.com"
+    }
+  ],
+  "userData": [
+    {
+      "id": "0b81",
+      "name": "Abhishek Jaybhaye",
+      "email": "abhi.jaybhaye2000@gmail.com",
+      "mobile": "7620428310",
+      "course": "Angular",
+      "gender": "male",
+      "skills": [
+        "Angular",
+        "C#",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "d83b",
+      "name": "Akash Shirsath",
+      "email": "akash85@gmail.com",
+      "mobile": "8979779285",
+      "course": "JavaScript",
+      "gender": "male",
+      "skills": [
+        "Marketing",
+        "Sales",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "190b",
+      "name": "Swaraj Kanawade",
+      "email": "swaraj987@gmail.com",
+      "mobile": "9899849494",
+      "course": "Java",
+      "gender": "male",
+      "skills": [
+        "Angular",
+        "Java",
+        "Mechanical"
+      ]
     }
   ]
 }

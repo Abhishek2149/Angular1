@@ -37,4 +37,10 @@ export class UsersService {
   deleteUser(id:number):Observable<any>{
     return this.http.delete(`${this.baseUrl}/${id}`)
   }
+
+  //Add data from reactive form
+  private baseUrl2 = 'http://localhost:3000/userData'
+  addUserData(user:any):Observable<any>{
+    return this.http.post<any>(`${this.baseUrl2}`,user)
+  }
 }

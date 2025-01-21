@@ -33,12 +33,17 @@ import { CparentsComponent } from './AngularlifecycleHooks/cparents/cparents.com
 
 import { UtilityConsumeServiceComponent } from './ServiceDemo/utility-consume-service/utility-consume-service.component';
 
-
 import { HttpConsumeComponent } from './ServiceDemo/http-consume/http-consume.component';
+
+
+import { TemplateDrivenFormComponent } from './FormsDemo/template-driven-form/template-driven-form.component';
+import { AngularReactiveFormComponent } from './FormsDemo/angular-reactive-form/angular-reactive-form.component';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HttpConsumeComponent],
+  imports: [RouterOutlet,AngularReactiveFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

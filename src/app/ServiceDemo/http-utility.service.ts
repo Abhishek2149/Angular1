@@ -10,7 +10,8 @@ export class HttpUtilityService {
 
   constructor(private client: HttpClient) { }
   getUsers(): Observable<any> {
-    return this.client.get("https://jsonplaceholder.typicode.com/users/");
+    // return this.client.get("https://jsonplaceholder.typicode.com/users/");
+    return this.client.get("http://localhost:3000/users")
   }
 
 }

@@ -1,0 +1,50 @@
+<div class="container d-flex col-md-6 mt-5 alert alert-secondary justify-content-center mt-3">
+    <form #UserForm="ngForm" (ngSubmit)="onSubmit(UserForm.value)">
+        <div [hidden]="!submited">
+            <div class="alert alert-success">
+                <strong>Form Submited Successfully!!</strong>
+            </div>
+        </div>
+        <fieldset class="text-dark">
+            <legend>User Registation Form</legend>
+            <div class="mb-3 mt-3">
+                <label for="name">name:</label>
+                <input #name="ngModel" type="text" class="form-control" id="name" placeholder="Enter name" name="name"
+                    required ngModel />
+                    <span class="text text-danger" *ngIf="name.invalid && name.touched"> <strong>please enter valid name</strong> </span>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="username">username:</label>
+                <input #username="ngModel" type="text" class="form-control" id="username" placeholder="Enter username"
+                    name="username" required ngModel />
+                    <span class="text text-danger" *ngIf="username.invalid && username.touched"> <strong>please enter valid username</strong> </span>
+            </div>
+            
+            <div class="mb-3 mt-3">
+                <label for="email">email:</label>
+                <input #email="ngModel" type="email" class="form-control" id="email" placeholder="Enter email"
+                    name="email" required ngModel />
+                <span class="text text-danger" *ngIf="email.invalid && email.touched"> <strong>please enter valid email</strong> </span>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="phone">phone:</label>
+                <input #phone="ngModel" type="phone" class="form-control" id="phone" placeholder="Enter phone"
+                    name="phone" required ngModel />
+                <span class="text text-danger" *ngIf="phone.invalid && phone.touched"> <strong>please enter valid phone number</strong> </span>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="website">website:</label>
+                <input #website="ngModel" type="website" class="form-control" id="website" placeholder="Enter website"
+                    name="website" required ngModel />
+                <span class="text text-danger" *ngIf="website.invalid && website.touched"> <strong>please enter valid website</strong> </span>
+            </div>
+
+            <button type="submit" [disabled]="UserForm.form.invalid" class="btn btn-primary" >Submit </button>
+
+            <!-- <button [disabled]="UserForm.form.invalid" class="btn btn-primary" (click)="userRegistration(UserForm.value)">Sign Up </button> -->
+        </fieldset>
+    </form>
+</div>
