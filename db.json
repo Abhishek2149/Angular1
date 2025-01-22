@@ -279,6 +279,32 @@
         "Java",
         "Mechanical"
       ]
+    },
+    {
+      "id": "81ab",
+      "name": "Abhishek Suresh",
+      "email": "abhi.jaybhaye.com",
+      "mobile": "076204283",
+      "course": "Angular",
+      "gender": "male",
+      "skills": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "fcf7",
+      "name": "Rohit Sharma",
+      "email": "Rohit45@gmail.com",
+      "mobile": "8962042831",
+      "course": "JavaScript",
+      "gender": "male",
+      "skills": [
+        "Cricket",
+        "Comedy",
+        "Angular"
+      ]
     }
   ]
 }

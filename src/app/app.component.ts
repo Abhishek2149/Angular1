@@ -39,7 +39,7 @@ import { HttpConsumeComponent } from './ServiceDemo/http-consume/http-consume.co
 import { TemplateDrivenFormComponent } from './FormsDemo/template-driven-form/template-driven-form.component';
 import { AngularReactiveFormComponent } from './FormsDemo/angular-reactive-form/angular-reactive-form.component';
 
-
+import { RevisionOfFormsComponent } from './FormsDemo/revision-of-forms/revision-of-forms.component';
 
 @Component({
   selector: 'app-root',

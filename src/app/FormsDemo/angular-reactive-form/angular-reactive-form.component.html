@@ -11,7 +11,7 @@
                 <label for="name">name:</label>
                 <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter name"
                     name="name" required />
-                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('name')?.touched">
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('name')?.valid && !myReactiveForm.get('name')?.touched">
                     <strong>please enter valid name</strong>
                 </span>
             </div>
@@ -20,7 +20,7 @@
                 <label for="email">email:</label>
                 <input formControlName="email" type="text" class="form-control" id="email" placeholder="Enter Email"
                     name="username" required />
-                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('email')?.touched">
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('email')?.valid && !myReactiveForm.get('email')?.touched">
                     <strong>please enter valid email</strong>
                 </span>
             </div>
@@ -29,7 +29,7 @@
                 <label for="mobile">mobile:</label>
                 <input formControlName="mobile" type="text" class="form-control" id="mobile" placeholder="Enter mobile"
                     name="mobile" required />
-                <span class="text text-danger" *ngIf="!myReactiveForm.get('UserDetails.email')?.valid && !myReactiveForm.get('mobile')?.touched">
+                <span class="text text-danger" *ngIf="!myReactiveForm.get('mobile')?.valid && !myReactiveForm.get('mobile')?.touched">
                     <strong>please enter valid mobile</strong>
                 </span>
             </div>

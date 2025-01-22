@@ -1,0 +1,9 @@
+<form #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
+    <input type="text" #username="ngModel" name="username" placeholder="Enter Username" required ngModel>
+    <span class="text-danger" *ngIf="username.invalid && username.touched"><strong>Enter Valid Username </strong></span>
+    <br/>
+    <input type="text" #email="ngModel" name="email" placeholder="Enter Email" required ngModel>
+    <span class="text-danger" *ngIf="email.invalid && email.touched"><strong>Enter Valid Email </strong></span>
+    <br/>
+    <input type="submit" value="Submit">
+</form>
